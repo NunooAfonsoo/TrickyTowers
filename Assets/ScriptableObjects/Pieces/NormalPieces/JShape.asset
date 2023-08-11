@@ -15,4 +15,4 @@ MonoBehaviour:
   prefab: {fileID: 6365731022170704994, guid: c4d43a6648a24af4bba5cd00fe61b255, type: 3}
   pieceSprite: {fileID: -802178989, guid: f7560322816863247958b668e591d840, type: 3}
   dimensions: {x: 2, y: 3}
-  Mass: 111
+  Mass: 1
