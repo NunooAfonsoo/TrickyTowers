@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f9f28bab8bef34291e4d2c7a293e26, type: 3}
+  m_Name: SShape
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 6365731022170704994, guid: 4c12f987a3a95494ab86081806d990c8, type: 3}
+  pieceSprite: {fileID: -1575748784, guid: f7560322816863247958b668e591d840, type: 3}
+  dimensions: {x: 3, y: 2}
+  Mass: 1

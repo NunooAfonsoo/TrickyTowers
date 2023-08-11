@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3824c128855f24048a1b2e5b7964700c, type: 3}
+  m_Name: AIModeConfig
+  m_EditorClassIdentifier: 
+  Description: Config for the AI level.
+  WinningMessage: "CONGRATULATIONS\n YOU WON!"
+  LosingMessage: YOU LOST
+  LevelWinningHeight: 30
+  AvailableLives: 10
+  Gravity: {x: 0, y: -9.81}
+  CanSeeNextPiece: 1
+  CanSeePiecePath: 1
+  PiecesXSpeed: 7.5
+  PiecesYSpeed: -6
+  PiecesDrag: 3
+  PiecesAngularDrag: 0.2
+  PiecesGravityScale: 1
+  PiecesSO:
+  - {fileID: 11400000, guid: 0b383fdc6a778c441a6a81ef609c836b, type: 2}
+  - {fileID: 11400000, guid: f18229338b3938a498ef410f234b24ea, type: 2}
+  - {fileID: 11400000, guid: 260b54f7f6a863a46ab99132e42dd35b, type: 2}
+  - {fileID: 11400000, guid: 538b87e723fd1744fa335c36d6e7dbbb, type: 2}
+  - {fileID: 11400000, guid: 48cac02b1b863544b8296b7ec4d7997f, type: 2}
+  - {fileID: 11400000, guid: b6171d7c348d690459e4527a23227e9f, type: 2}
+  - {fileID: 11400000, guid: 6b9d4e7c6830c6d40ac9c02e3a5bdf4e, type: 2}
+  - {fileID: 11400000, guid: c89b22e6d6bb5ef4488a768688526b8a, type: 2}
+  - {fileID: 11400000, guid: 6f9e9ff507c91f84ebd504806c885bb0, type: 2}
+  - {fileID: 11400000, guid: ee20e3ae90ebe5c4db78d5df78ff3d95, type: 2}
+  - {fileID: 11400000, guid: ddcd574ba6e1b784bbf12ef17bd64ce0, type: 2}
+  - {fileID: 11400000, guid: a4e56edd57b1f8f4f802937be7c695b8, type: 2}
+  - {fileID: 11400000, guid: 8e017b8844a6b1443bdbac8ec63b3cd7, type: 2}
+  - {fileID: 11400000, guid: 93d29934786594a488affa20a7c4d0bf, type: 2}
