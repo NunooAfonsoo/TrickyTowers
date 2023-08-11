@@ -76,9 +76,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77cb58a3b6c10b64b801af2e0de48752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pieceConfig: {fileID: 11400000, guid: 6f9e9ff507c91f84ebd504806c885bb0, type: 2}
   piecePlacedEvent: {fileID: 11400000, guid: 154070e6deed6b541909f95bae4476b6, type: 2}
   pieceDestroyedEvent: {fileID: 11400000, guid: 151f66ad97c936c478167eeba454f12e, type: 2}
-  pieceScriptableObject: {fileID: 11400000, guid: 6f9e9ff507c91f84ebd504806c885bb0, type: 2}
 --- !u!1001 &2492574744398683526
 PrefabInstance:
   m_ObjectHideFlags: 0

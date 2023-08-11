@@ -76,9 +76,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52f9729ceaa07034d920e3504668f87a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pieceConfig: {fileID: 11400000, guid: 48cac02b1b863544b8296b7ec4d7997f, type: 2}
   piecePlacedEvent: {fileID: 11400000, guid: 00667d161af7155489e3d736b6499f5c, type: 2}
   pieceDestroyedEvent: {fileID: 11400000, guid: d5ec83e625059874c9f21aaace0b4156, type: 2}
-  pieceScriptableObject: {fileID: 11400000, guid: 48cac02b1b863544b8296b7ec4d7997f, type: 2}
   pieceMovedEvent: {fileID: 11400000, guid: 34c58c6556ae7484781117963dcf096e, type: 2}
   pieceStopedEvent: {fileID: 11400000, guid: 8c172499b17daa842a951f12908d4af7, type: 2}
   pieceRotatedEvent: {fileID: 11400000, guid: aaba8b75222b7fe4ba0e6dd15bb372b2, type: 2}
