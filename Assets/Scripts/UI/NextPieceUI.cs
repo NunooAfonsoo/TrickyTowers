@@ -4,7 +4,9 @@ using UnityEngine.UI;
 public class NextPieceUI : MonoBehaviour
 {
     [SerializeField] private LevelConfigSO levelConfig;
+
     [SerializeField] private SpriteEventSO spawnNewPieceEvent;
+
     [SerializeField] private Image nextPiece;
 
     private void Awake()

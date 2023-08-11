@@ -4,7 +4,9 @@ using UnityEngine;
 public class LivesLeftUI : MonoBehaviour
 {
     [SerializeField] private LevelConfigSO levelConfig;
+
     [SerializeField] private IntEventSO lifeLostEvent;
+
     [SerializeField] private TextMeshProUGUI livesLeftText;
 
     private void Awake()

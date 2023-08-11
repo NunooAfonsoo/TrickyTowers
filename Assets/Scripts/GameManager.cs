@@ -12,7 +12,6 @@ public class GameManager : Singleton<GameManager>
 
     [SerializeField] private Transform winningHeightSprite;
     [SerializeField] private Transform activePiecePath;
-
     [SerializeField] private Transform startingGroundCheck;
     [SerializeField] private LayerMask landedPiecesLayer;
 

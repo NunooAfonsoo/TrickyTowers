@@ -1,16 +1,15 @@
-using System;
 using UnityEngine;
 using UnityEngine.Pool;
 
 public abstract class PieceController : MonoBehaviour, IMoveable, IRotateable, IPlaceable
 {
-    public Vector2Int Dimensions => pieceScriptableObject.dimensions;
+    public Vector2Int Dimensions => pieceConfig.dimensions;
     public bool HasBeenPlaced => hasBeenPlaced;
+
+    [SerializeField] private PieceConfigSO pieceConfig;
 
     [SerializeField] private VoidEventSO piecePlacedEvent;
     [SerializeField] private BoolEventSO pieceDestroyedEvent;
-
-    [SerializeField] private PieceConfigSO pieceScriptableObject;
 
     private Rigidbody2D rb;
     private bool hasFallenOffMap;
@@ -22,7 +21,7 @@ public abstract class PieceController : MonoBehaviour, IMoveable, IRotateable, I
     {
         rb = GetComponent<Rigidbody2D>();
         movementDirection = MovementDirection.None;
-        rb.velocity = new Vector2(0, pieceScriptableObject.YSpeed);
+        rb.velocity = new Vector2(0, pieceConfig.YSpeed);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -112,10 +111,10 @@ public abstract class PieceController : MonoBehaviour, IMoveable, IRotateable, I
 
     private void SetPiecePhysics()
     {
-        rb.mass = pieceScriptableObject.Mass;
-        rb.drag = pieceScriptableObject.Drag;
-        rb.angularDrag = pieceScriptableObject.AngularDrag;
-        rb.gravityScale = pieceScriptableObject.GravityScale;
+        rb.mass = pieceConfig.Mass;
+        rb.drag = pieceConfig.Drag;
+        rb.angularDrag = pieceConfig.AngularDrag;
+        rb.gravityScale = pieceConfig.GravityScale;
     }
 
     public void Move(MovementDirection movementDirection)
@@ -131,7 +130,7 @@ public abstract class PieceController : MonoBehaviour, IMoveable, IRotateable, I
                 this.movementDirection = movementDirection;
                 int direction = movementDirection == MovementDirection.Right ? 1 : -1;
 
-                rb.velocity = new Vector2(direction * pieceScriptableObject.XSpeed, pieceScriptableObject.YSpeed);
+                rb.velocity = new Vector2(direction * pieceConfig.XSpeed, pieceConfig.YSpeed);
                 break;
         }
 
@@ -143,7 +142,7 @@ public abstract class PieceController : MonoBehaviour, IMoveable, IRotateable, I
         movementDirection = MovementDirection.None;
         ClampPiecePosition();
 
-        rb.velocity = new Vector2(0, pieceScriptableObject.YSpeed);
+        rb.velocity = new Vector2(0, pieceConfig.YSpeed);
     }
 
     public void Rotate(MovementDirection rotationDirection)
@@ -203,7 +202,7 @@ public abstract class PieceController : MonoBehaviour, IMoveable, IRotateable, I
     public virtual void Reset()
     {
         movementDirection = MovementDirection.None;
-        rb.velocity = new Vector2(0, pieceScriptableObject.YSpeed);
+        rb.velocity = new Vector2(0, pieceConfig.YSpeed);
         hasBeenPlaced = false;
         hasFallenOffMap = false;
         transform.rotation = Quaternion.identity;

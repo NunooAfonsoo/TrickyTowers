@@ -4,11 +4,12 @@ using UnityEngine.Pool;
 public abstract class Spawner: MonoBehaviour
 {
     [SerializeField] protected PieceConfigSO[] piecesSOs;
-    [SerializeField] protected Transform piecesContainer;
-    [SerializeField] protected Transform spawnerLocation;
 
     [SerializeField] private VoidEventSO piecePlacedEvent;
     [SerializeField] private BoolEventSO pieceDestroyedEvent;
+
+    [SerializeField] protected Transform piecesContainer;
+    [SerializeField] protected Transform spawnerLocation;
 
     protected Vector2 spawnPosition;
     protected IObjectPool<PieceController> piecesPool;

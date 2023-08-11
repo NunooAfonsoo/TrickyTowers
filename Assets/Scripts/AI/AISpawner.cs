@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AIPiecesSpawner : Spawner
+public class AISpawner : Spawner
 {
     protected override void Awake()
     {

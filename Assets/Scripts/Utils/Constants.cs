@@ -2,10 +2,7 @@ using UnityEngine;
 
 public static class Constants
 {
-    public const string FLOOR_TAG = "Floor";
     public const int PIECES_PATH_HEIGHT = 100;
-
-
     public const float INITIAL_PIECE_MASS = 1;
 
     public static readonly Vector2 SPAWN_POSITION = new Vector2(Screen.width / 2, 0.85f * Screen.height);
@@ -15,7 +12,6 @@ public static class Constants
 public static class CameraConsts
 {
     public const float LOWEST_Y_POSITION = 18;
-
 }
 
 public static class Layers

@@ -36,7 +36,7 @@ public class CameraManager : Singleton<CameraManager>, IMoveable
             StopMove();
         }
 
-        transform.position += Vector3.up * currentSpeed * Time.deltaTime;
+        transform.position += currentSpeed * Time.deltaTime * Vector3.up;
     }
 
     public void ShakeCamera()
