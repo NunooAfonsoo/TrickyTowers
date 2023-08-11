@@ -22,7 +22,7 @@ MonoBehaviour:
   CanSeePiecePath: 1
   PiecesXSpeed: 7.5
   PiecesYSpeed: -6
-  PiecesDrag: 3
+  PiecesDrag: 2
   PiecesAngularDrag: 0.2
   PiecesGravityScale: 1
   PiecesSO:
